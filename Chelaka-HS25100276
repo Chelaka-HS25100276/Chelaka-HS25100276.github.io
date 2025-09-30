@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A.M.C.M. Dikkapitiya — Portfolio</title>
+  <meta name="description" content="e-Portfolio of A.M.C.M. Dikkapitiya — SC1172: Introduction to IT" />
+  <style>
+    :root{--accent:#0b5fff;--muted:#6b7280;--bg:#f6f8fb;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:#0f172a}
+    .container{max-width:980px;margin:36px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:120px;height:120px;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,#e6eefc,#eef6ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)}
+    h1{margin:0;font-size:28px}
+    .sub{color:var(--muted);font-size:14px;margin-top:6px}
+    nav{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    a.btn{display:inline-block;padding:8px 12px;background:var(--card);border-radius:10px;border:1px solid #e6e9ef;text-decoration:none;color:#0f172a;font-weight:600}
+    main{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,15,30,0.06)}
+    h2{margin:0 0 12px 0}
+    .muted{color:var(--muted);font-size:14px}
+    ul.simple{list-style:none;padding:0;margin:0}
+    ul.simple li{padding:8px 0;border-bottom:1px dashed #eef2ff}
+    .right-col .card + .card{margin-top:14px}
+    .links a{display:block;margin-bottom:8px;color:var(--accent);text-decoration:none;font-weight:600}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+    /* responsive */
+    @media (max-width:880px){main{grid-template-columns:1fr;}.avatar{width:96px;height:96px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">Photo</div>
+      <div>
+        <h1>A.M.C.M. Dikkapitiya</h1>
+        <div class="sub">HS25100276 — Batch 11: July 2025</div>
+        <div class="muted">Sri Lanka Institute of Information Technology · New Kandy Road, Malabe</div>
+        <nav>
+          <a class="btn" href="#about">About</a>
+          <a class="btn" href="#education">Education</a>
+          <a class="btn" href="#projects">Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <article id="about" class="card">
+          <h2>About me</h2>
+          <p class="muted">A short paragraph about you — who you are, what you study, and what kinds of roles you are seeking. Replace this text with a 3–5 sentence bio that highlights your interests in IT and any career goals.</p>
+        </article>
+
+        <article id="education" class="card" style="margin-top:16px">
+          <h2>Educational qualifications</h2>
+          <h3 style="margin:8px 0 4px 0">Higher education</h3>
+          <p class="muted">Sri Lanka Institute of Information Technology — BSc (Hons) / Diploma (specify programme)</p>
+
+          <h3 style="margin:12px 0 4px 0">Secondary education</h3>
+          <p class="muted">(Add your school, year, and any notable achievements)</p>
+        </article>
+
+        <article id="experience" class="card" style="margin-top:16px">
+          <h2>Work experience</h2>
+          <p class="muted">If you have any internships, part-time jobs or freelance work, list them here with a short description. If none, you may describe relevant coursework or lab experience.</p>
+          <ul class="simple">
+            <li><strong>Role title</strong> — Company / Organisation <span class="muted">(Year)</span><br/><small class="muted">Short bullet about responsibilities and outcomes.</small></li>
+          </ul>
+        </article>
+
+        <article id="projects" class="card" style="margin-top:16px">
+          <h2>Projects</h2>
+          <p class="muted">Showcase 2–4 projects related to your course or interests. For each project include: title, short description, technologies used, and a link to the GitHub repo if available.</p>
+          <ul class="simple">
+            <li><strong>Project Title</strong> — short 1-line summary. <br/><small class="muted">Technologies: HTML, CSS, JavaScript — <a href="#">GitHub</a></small></li>
+          </ul>
+        </article>
+
+        <article id="skills" class="card" style="margin-top:16px">
+          <h2>Skills</h2>
+          <p class="muted">List relevant technical and soft skills (programming languages, tools, lab techniques, communication, teamwork).</p>
+          <ul class="simple">
+            <li>Programming: Python, Java, C# (edit as appropriate)</li>
+            <li>Tools: Git, GitHub, VS Code</li>
+            <li>Others: Technical writing, teamwork</li>
+          </ul>
+        </article>
+
+        <article id="hobbies" class="card" style="margin-top:16px">
+          <h2>Hobbies</h2>
+          <p class="muted">A few lines about your hobbies and interests outside studies.</p>
+        </article>
+      </section>
+
+      <aside class="right-col">
+        <div class="card">
+          <h2>Quick info</h2>
+          <p class="muted"><strong>Name:</strong> A.M.C.M. Dikkapitiya<br><strong>Student ID:</strong> HS25100276<br><strong>Institute:</strong> Sri Lanka Institute of Information Technology<br><strong>Batch:</strong> Batch 11: July 2025</p>
+          <p class="muted"><strong>Address:</strong><br>New Kandy Road, Malabe</p>
+        </div>
+
+        <div class="card">
+          <h2>Files</h2>
+          <div class="links">
+            <a href="HS25100276_Resume.pdf" target="_blank">Download resume (HS25100276_Resume.pdf)</a>
+            <a href="#">Download as HTML</a>
+          </div>
+        </div>
+
+        <div class="card" id="contact">
+          <h2>Contact</h2>
+          <p class="muted">Email: <a href="mailto:your.email@domain.com">your.email@domain.com</a></p>
+          <p class="muted">LinkedIn: <a href="#">your-linkedin</a></p>
+        </div>
+
+        <div class="card" style="text-align:center">
+          <small class="muted">Tip: Replace the placeholder photo file named <code>photo.jpg</code> with your own image. Name your resume file exactly as above so the link works.</small>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="muted">Template created for SC1172 e-Portfolio submission • Follow the course submission instructions: create a folder named "STUDENTID_FULLNAME_Portfolio" containing (1) repository ZIP (2) saved HTML file (3) text file with links — then compress and submit.</div>
+    </footer>
+
+
+
+  </div>
+</body>
+</html>
