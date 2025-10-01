@@ -1,127 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chelaka Dikkapitiya — Portfolio</title>
-  <meta name="description" content="e-Portfolio of Chelaka Dikkapitiya — SC1172: Introduction to IT" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chelaka Dikkapitiya - Portfolio</title>
   <style>
-    :root{--accent:#0b5fff;--muted:#6b7280;--bg:#f6f8fb;--card:#ffffff}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:#0f172a}
-    .container{max-width:980px;margin:36px auto;padding:24px}
-    header{display:flex;gap:20px;align-items:center}
-    .avatar{width:120px;height:120px;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,#e6eefc,#eef6ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)}
-    h1{margin:0;font-size:28px}
-    .sub{color:var(--muted);font-size:14px;margin-top:6px}
-    nav{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
-    a.btn{display:inline-block;padding:8px 12px;background:var(--card);border-radius:10px;border:1px solid #e6e9ef;text-decoration:none;color:#0f172a;font-weight:600}
-    main{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,15,30,0.06)}
-    h2{margin:0 0 12px 0}
-    .muted{color:var(--muted);font-size:14px}
-    ul.simple{list-style:none;padding:0;margin:0}
-    ul.simple li{padding:8px 0;border-bottom:1px dashed #eef2ff}
-    .right-col .card + .card{margin-top:14px}
-    .links a{display:block;margin-bottom:8px;color:var(--accent);text-decoration:none;font-weight:600}
-    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
-    /* responsive */
-    @media (max-width:880px){main{grid-template-columns:1fr;}.avatar{width:96px;height:96px}}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #e0f7fa;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #004d40;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #00e5ff;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: #b2ebf2;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #00e5ff;
+      border-bottom: 2px solid #00796b;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: #1c1c1c;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+    }
+    .avatar img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00e5ff;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img.project-img {
+      margin-top: 10px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="avatar">Photo</div>
-      <div>
-        <h1>Chelaka Dikkapitiya</h1>
-        <div class="sub">HS25100276 — Batch 11: July 2025</div>
-        <div class="muted">Sri Lanka Institute of Information Technology · New Kandy Road, Malabe</div>
-        <nav>
-          <a class="btn" href="#about">About</a>
-          <a class="btn" href="#education">Education</a>
-          <a class="btn" href="#projects">Projects</a>
-          <a class="btn" href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+  <header>
+    <div class="avatar">
+      <img src="200427400530_NP.jpg" alt="Chelaka Dikkapitiya">
+    </div>
+    <h1>Chelaka Dikkapitiya</h1>
+    <p>BSc (Hons) in Biotechnology Undergraduate | SLIIT Malabe</p>
+  </header>
 
-    <main>
-      <section>
-        <article id="about" class="card">
-          <h2>About me</h2>
-          <p class="muted">My name is Chelaka Dikkapitiya, and I am 21 years old. I am currently pursuing a BSc in Biotechnology at the Sri Lanka Institute of Information Technology (SLIIT), Malabe. With a strong passion for science and technology, I am particularly interested in areas that bridge biotechnology and information technology, such as bioinformatics, computational biology, and data-driven research. I enjoy exploring how innovative technologies can be applied to solve real-world biological challenges, from healthcare to agriculture. My long-term goal is to become a scientist who contributes to advancements in biotechnology, making a meaningful impact through research and innovation. I am motivated, curious, and eager to continuously expand my knowledge and skills, especially in interdisciplinary fields where biology meets technology.</p>
-        </article>
+  <section>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I am Chelaka Dikkapitiya, a 21-year-old undergraduate currently pursuing a BSc (Hons) degree in Biotechnology at SLIIT Malabe, Sri Lanka. 
+        I am passionate about exploring fields that combine biotechnology and IT, such as bioinformatics, and aspire to become a scientist in the future. 
+        I also have professional laboratory work experience gained through my studies at SLIIT.
+      </p>
+    </div>
 
-        <article id="education" class="card" style="margin-top:16px">
-          <h2>Educational qualifications</h2>
-          <h3 style="margin:8px 0 4px 0">Higher education</h3>
-          <p class="muted">Sri Lanka Institute of Information Technology — BSc(Hons) Biotechnology (pending)</p>
+    <div class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Roots of Tomorrow ’25 — Phase 2</strong>  
+          <br>
+             As part of this initiative, I actively contributed to planting 50 MEE trees in Wakwella, Galle. 
+             This project not only focused on reforestation but also aimed at raising awareness of sustainable practices, 
+             encouraging community participation, and highlighting the role of youth in environmental conservation. 
+             Through my involvement, I gained valuable experience in teamwork, organizing large-scale activities, 
+             and understanding the importance of biodiversity restoration for future generations.  
+          <br>
+          <img src="photo1.jpeg" alt="MEE tree planting project 1" class="project-img">
+          <img src="photo2.jpeg" alt="MEE tree planting project 2" class="project-img">
+        </li>
+      </ul>
+    </div>
 
-          <h3 style="margin:12px 0 4px 0">Secondary education</h3>
-          <p class="muted">Trinity College Kandy (2010 - 2023)</p>
-        </article>
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>Basic laboratory techniques (pipetting, microscopy, solution preparation)</li>
+        <li>Scientific writing and reporting</li>
+        <li>Teamwork and collaboration</li>
+        <li>Problem-solving and critical thinking</li>
+        <li>Basic bioinformatics concepts</li>
+        <li>IT literacy (MS Office, online tools)</li>
+      </ul>
+    </div>
 
-        <article id="experience" class="card" style="margin-top:16px">
-          <h2>Professional laboratory experience</h2>
-          <p class="muted">No formal work experience yet. However, I have gained professional laboratory experience at SLIIT, where I was trained in a variety of biotechnology techniques and research practices.</p>
-        </article>
+    <div class="card">
+      <h2>Hobbies</h2>
+      <ul>
+       <li>
+         <strong>Reading Books</strong> — I enjoy reading a variety of genres, from scientific literature and biographies 
+         to fiction, as it helps me broaden my knowledge, sharpen critical thinking, and gain fresh perspectives.
+       </li>
+        <li>
+         <strong>Learning New Languages and Cultures</strong> — I have a passion for exploring different languages and cultures, 
+         which enhances my communication skills, cultural awareness, and adaptability. 
+         It also allows me to connect with people from diverse backgrounds and understand global perspectives.
+        </li>
+      </ul>
+    </div>
 
-        <article id="projects" class="card" style="margin-top:16px">
-          <h2>Projects</h2>
-          <p class="muted">Showcasing selected academic and extracurricular projects related to biotechnology and interdisciplinary research.</p>
-          <ul class="simple">
-            <li><strong>SLIPS 2.0 Smart Antifouling Coating</strong> — Group project exploring a novel biotechnology-based surface coating designed to prevent biofouling. <br/><small class="muted">Technologies & Methods: Literature research, presentation design, and biotechnology application concepts — <a href="https://www.instagram.com/p/DPIxU3MCD3T/?igsh=MWpmdTRiZXk2bTBwaw==" target="_blank">View Project</a></small></li>
-          </ul>
-        </article>
+    <div class="card">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:hs25100276@my.sliit.lk">hs25100276@my.sliit.lk</a></li>
+      </ul>
+    </div>
 
-        <article id="skills" class="card" style="margin-top:16px">
-          <h2>Skills</h2>
-          <p class="muted">List relevant technical and soft skills (programming languages, tools, lab techniques, communication, teamwork).</p>
-          <ul class="simple">
-            <li>Programming: Python, Java, C# (edit as appropriate)</li>
-            <li>Tools: Git, GitHub, VS Code</li>
-            <li>Others: Technical writing, teamwork</li>
-          </ul>
-        </article>
-
-        <article id="hobbies" class="card" style="margin-top:16px">
-          <h2>Hobbies</h2>
-          <p class="muted">A few lines about your hobbies and interests outside studies.</p>
-        </article>
-      </section>
-
-      <aside class="right-col">
-        <div class="card">
-          <h2>Quick info</h2>
-          <p class="muted"><strong>Name:</strong> Chelaka Dikkapitiya<br><strong>Student ID:</strong> HS25100276<br><strong>Institute:</strong> Sri Lanka Institute of Information Technology<br><strong>Batch:</strong> Batch 11: July 2025</p>
-          <p class="muted"><strong>Address:</strong><br>New Kandy Road, Malabe</p>
-        </div>
-
-        <div class="card">
-          <h2>Files</h2>
-          <div class="links">
-            <a href="HS25100276_Resume.pdf" target="_blank">Download resume (HS25100276_Resume.pdf)</a>
-            <a href="#">Download as HTML</a>
-          </div>
-        </div>
-
-        <div class="card" id="contact">
-          <h2>Contact</h2>
-          <p class="muted">Email: <a href="mailto:your.email@domain.com">your.email@domain.com</a></p>
-          <p class="muted">LinkedIn: <a href="#">your-linkedin</a></p>
-        </div>
-
-        <div class="card" style="text-align:center">
-          <small class="muted">Tip: Replace the placeholder photo file named <code>photo.jpg</code> with your own image. Name your resume file exactly as above so the link works.</small>
-        </div>
-      </aside>
-    </main>
-
-    <footer>
-      <div class="muted">Template created for SC1172 e-Portfolio submission • Follow the course submission instructions: create a folder named "STUDENTID_FULLNAME_Portfolio" containing (1) repository ZIP (2) saved HTML file (3) text file with links — then compress and submit.</div>
-    </footer>
-
-  </div>
+    <div class="card">
+      <h2>Files</h2>
+      <ul>
+        <li><a href="HS25100276_CV.pdf" download="Chelaka_Dikkapitiya_CV.pdf">Download CV</a></li>
+      </ul>
+    </div>
+  </section>
 </body>
 </html>
